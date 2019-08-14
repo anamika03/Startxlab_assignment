@@ -1,0 +1,17 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>Program</title>
+</head>
+<body>
+<h3>1) Get number of hours, minutes and seconds from number of seconds.</h3>
+<script>
+ var time = window.prompt("Enter the number of seconds.");
+ var hour = Math.floor(time/3600);
+ time = time - hour *3600;
+ var min = Math.floor(time/60);
+ var sec = time - min * 60;
+ document.write("Hours = "+hour+ " Minutes = "+min+ " Seconds = "+sec);
+</script>
+</body>
+</html>

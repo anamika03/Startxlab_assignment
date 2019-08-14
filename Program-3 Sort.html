@@ -1,0 +1,22 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>Program</title>
+</head>
+<body>
+<h3>3) You are given with T number of strings. You need to sort the strings according to their first character.</h3>
+<script>
+ var testCase = window.prompt("Enter the number of test case.");
+ document.write("Test Case : "+testCase+"<br>");
+ var input = [];
+
+ for(var i=0; i<testCase; i++)
+ {
+   input[i] = window.prompt("Enter input "+i); 
+ }
+ document.write("Input : "+" "+input+"<br>");
+ input.sort();
+ document.write("Sorted output : "+input);
+</script>
+</body>
+</html>

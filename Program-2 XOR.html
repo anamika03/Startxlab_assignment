@@ -1,0 +1,37 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>Program</title>
+</head>
+<body>
+<h3>2) You are given  two numbers L and R, you have to find if XOR of all the numbers in range L to R (L,R both inclusive) is odd or even.</h3>
+<script>
+ var testCase = window.prompt("Enter the number of test case.");
+ document.write("Test Case :"+testCase+"<br>");
+ var i = 0;
+ for(i=0; i<testCase; i++)
+ {
+    var L = window.prompt("Enter L");
+    var R = window.prompt("Enter R");
+    document.write(L+"  "+R+"<br>");
+    var res = isEvenOrOdd(L,R);
+    document.write(res+"<br>");    
+
+    function isEvenOrOdd(L,R) 
+    { 
+       var oddCount1 = R - L;
+       var oddCount = oddCount1 / 2; 
+  
+       if (R % 2 === 1 || L % 2 === 1) 
+          oddCount++; 
+
+       if (oddCount % 2 === 0) 
+          return "Even"; 
+       else
+          return "Odd"; 
+     } 
+ }
+
+</script>
+</body>
+</html>
