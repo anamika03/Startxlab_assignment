@@ -19,9 +19,8 @@
 
     function isEvenOrOdd(L,R) 
     { 
-       var oddCount1 = R - L;
-       var oddCount = oddCount1 / 2; 
-  
+       var oddCount = parseInt((R - L) / 2);
+         
        if (R % 2 === 1 || L % 2 === 1) 
           oddCount++; 
 
